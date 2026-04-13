@@ -120,11 +120,32 @@ Models used:
 
 ---
 
-## 🚀 Key Highlights
-- Motion-based feature engineering (no deep learning)  
-- Optical flow-based representation  
-- Effective handling of class imbalance using SMOTE  
-- Threshold optimization using grid search  
-- Strong generalization on test data  
+
+## 📊 Results
+
+### 🔹 Training Performance
+![Training](outputs/Training_allmodels.png)
+
+### 🔹 Best Model (Gradient Boosting)
+![Best Model](outputs/best_model_confusion_matrix.png)
+
+## ⭐ Key Highlights
+- Motion-based feature engineering using frame differences
+- Optical flow features for capturing direction and magnitude
+- SMOTE used to handle class imbalance
+- Threshold tuning via grid search for improved minority class performance
+- Best model: Gradient Boosting (F1 Macro ~0.79 on test data)
+
+---
+
+## 🔄 Project Pipeline
+1. Data Validation & Cleaning  
+2. Temporal Frame Pair Processing  
+3. Feature Engineering (motion + optical flow)  
+4. Feature Scaling (Standardization)  
+5. Handling Class Imbalance (SMOTE)  
+6. Model Training (5 ML models)  
+7. Threshold Tuning  
+8. Evaluation & Comparison
 
 ---
